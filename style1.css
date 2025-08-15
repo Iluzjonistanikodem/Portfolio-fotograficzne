@@ -27,9 +27,10 @@ header p {
 }
 nav {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 25px;
-    
+    border-bottom: 3px solid #ffcc00;
+    background-color: #ffffff1e;
 }
 a {
     color: #ffcc00;
@@ -39,7 +40,7 @@ a {
     
 }
 .navigate{
-    padding: 30px;
+    padding: 40px;
 }
 
 a:hover {
@@ -59,7 +60,6 @@ a:current{
         60%  {color: orange; }
         100% {color: white; }
     }
-
 
 .gallery {
     display: grid;
