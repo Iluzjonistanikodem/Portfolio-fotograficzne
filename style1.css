@@ -90,7 +90,7 @@ footer {
     position: absolute;
     bottom: 1;
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     body{
         font-size: 0.9em;
     }
@@ -98,8 +98,8 @@ footer {
         font-size: 1.8rem; /* 1.8rem default */
     }
     .navigate{
-        padding: 1.5em;
-        font-size: 0.5em;
+        padding: 0.4em;
+        font-size: 0.4em;
     }
     
 }
