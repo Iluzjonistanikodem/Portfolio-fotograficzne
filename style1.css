@@ -90,13 +90,16 @@ footer {
     position: absolute;
     bottom: 1;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+    body{
+        font-size: 0.9em;
+    }
     header h1 {
         font-size: 1.8rem; /* 1.8rem default */
     }
     .navigate{
-        padding: 2em;
+        padding: 1.5em;
         font-size: 0.5em;
     }
-
+    
 }
