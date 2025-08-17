@@ -27,7 +27,6 @@ body {
 #content {
   display: none;
   padding: 0px;
-  text-align: center;
 }
 header {
     text-align: center;
@@ -131,3 +130,4 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   #intro { transition: none; }
 }
+
