@@ -2,11 +2,20 @@ window.addEventListener("load", () => {
       const intro = document.getElementById("intro");
       const content = document.getElementById("content");
 
-      setTimeout(() => {
-        intro.style.opacity = "0";
+      // sprawdzamy, czy intro już było pokazane
+      if (localStorage.getItem("introShown")) {
+        // jeśli tak → pomiń intro
+        intro.style.display = "none";
+        content.style.display = "block";
+      } else {
+        // jeśli pierwszy raz → pokaż intro
         setTimeout(() => {
-          intro.style.display = "none";
-          content.style.display = "block";
-        }, 1000); // czekamy aż zniknie
-      }, 2000); // intro trwa 2 sekundy
+          intro.style.opacity = "0";
+          setTimeout(() => {
+            intro.style.display = "none";
+            content.style.display = "block";
+            localStorage.setItem("introShown", "true"); // zapisz, że intro było
+          }, 1000);
+        }, 2000);
+      }
     });
